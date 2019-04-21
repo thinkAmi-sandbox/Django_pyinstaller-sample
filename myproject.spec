@@ -9,6 +9,7 @@ a = Analysis(['myproject\\manage.py'],
              datas=[
                  ('myproject/templates', 'templates'),
                  ('myproject/static_files', 'static_files'),
+                 ('myproject/myapp/fixtures', 'myapp/fixtures'),
              ],
              hiddenimports=[
                  'myapp.apps',
