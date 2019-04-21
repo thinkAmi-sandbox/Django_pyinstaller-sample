@@ -4,10 +4,13 @@ block_cipher = None
 
 
 a = Analysis(['myproject\\manage.py'],
-             pathex=['D:\\GitHub\\django_samples\\django_pyinstaller_sample2'],
+             pathex=['D:\\GitHub\\django_samples\\django_pyinstaller_sample'],
              binaries=[],
              datas=[],
-             hiddenimports=[],
+             hiddenimports=[
+                 'myapp.apps',
+                 'myapp.urls',
+             ],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
