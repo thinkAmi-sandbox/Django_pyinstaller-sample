@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/myapp.css' %}">
+</head>
+<body>
+<p class="version">Python version: {{ python_version }}</p>
+<p>BASE_DIR: {{ base_dir }}</p>
+
+<div>
+    Fruit Model:
+    <ul>
+        {% for fruit in fruits %}
+            <li>{{ fruit }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<button id="show">say</button>
+
+<script src="{% static "js/myapp.js" %}"></script>
+</body>
+</html>

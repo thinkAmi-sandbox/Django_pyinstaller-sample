@@ -6,7 +6,10 @@ block_cipher = None
 a = Analysis(['myproject\\manage.py'],
              pathex=['D:\\GitHub\\django_samples\\django_pyinstaller_sample'],
              binaries=[],
-             datas=[],
+             datas=[
+                 ('myproject/templates', 'templates'),
+                 ('myproject/static_files', 'static_files'),
+             ],
              hiddenimports=[
                  'myapp.apps',
                  'myapp.urls',
